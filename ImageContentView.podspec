@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'ImageContentView/**/*'
+  s.source_files = 'ImageContentView/Classes/**/*'
   
   # s.resource_bundles = {
   #   'ImageContentView' => ['ImageContentView/Assets/*.png']
