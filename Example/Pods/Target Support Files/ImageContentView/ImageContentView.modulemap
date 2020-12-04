@@ -1,0 +1,6 @@
+framework module ImageContentView {
+  umbrella header "ImageContentView-umbrella.h"
+
+  export *
+  module * { export * }
+}

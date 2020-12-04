@@ -1,0 +1,16 @@
+PODS:
+  - ImageContentView (0.1.0)
+
+DEPENDENCIES:
+  - ImageContentView (from `../`)
+
+EXTERNAL SOURCES:
+  ImageContentView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ImageContentView: 8b57c751e557452dccd9a286ce17dc967bef51ad
+
+PODFILE CHECKSUM: 8620ca2d60b2ae0e75e62e97b55ad81977d1a2d8
+
+COCOAPODS: 1.9.3
