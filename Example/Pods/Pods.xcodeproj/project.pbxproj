@@ -9,11 +9,6 @@
 /* Begin PBXBuildFile section */
 		0EAFF23D55AE20FBBC1CC8E9A9B1BA19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		13FBBA9119C74F427D8C6147E91F122C /* ImageContentView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEFE3394A07327ED46D5C8C50DC2FD6 /* ImageContentView-dummy.m */; };
-		54D90ED1257AA6C200ED2B2C /* ContentAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D90EC9257AA6C200ED2B2C /* ContentAction.swift */; };
-		54D90ED3257AA6C200ED2B2C /* DynamicImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D90ECB257AA6C200ED2B2C /* DynamicImageView.swift */; };
-		54D90ED4257AA6C200ED2B2C /* ImageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D90ECC257AA6C200ED2B2C /* ImageContentView.swift */; };
-		54D90ED5257AA6C200ED2B2C /* ImageActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D90ECD257AA6C200ED2B2C /* ImageActionButton.swift */; };
-		54D90ED6257AA6C200ED2B2C /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D90ECE257AA6C200ED2B2C /* UIButton.swift */; };
 		8D284A0F5512C96ADF906FD222A14BF4 /* Pods-ImageContentView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 43231550A6466F62D870882E501E8231 /* Pods-ImageContentView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD0A58F720FB92C355A9FEEDE59C87E1 /* Pods-ImageContentView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C30B9B23759D59F57D5717C856DA5F6 /* Pods-ImageContentView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C90AF3D44326113AE0F9C772907AB810 /* Pods-ImageContentView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C7D3F0736CE10BA34F5A430234240E /* Pods-ImageContentView_Example-dummy.m */; };
@@ -50,11 +45,6 @@
 		42263B7A44702D83ED4507ED8D517739 /* Pods-ImageContentView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ImageContentView_Tests-Info.plist"; sourceTree = "<group>"; };
 		43231550A6466F62D870882E501E8231 /* Pods-ImageContentView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ImageContentView_Tests-umbrella.h"; sourceTree = "<group>"; };
 		44AA23032C68477E26EB2DD129816EE4 /* ImageContentView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ImageContentView.debug.xcconfig; sourceTree = "<group>"; };
-		54D90EC9257AA6C200ED2B2C /* ContentAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentAction.swift; sourceTree = "<group>"; };
-		54D90ECB257AA6C200ED2B2C /* DynamicImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicImageView.swift; sourceTree = "<group>"; };
-		54D90ECC257AA6C200ED2B2C /* ImageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageContentView.swift; sourceTree = "<group>"; };
-		54D90ECD257AA6C200ED2B2C /* ImageActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageActionButton.swift; sourceTree = "<group>"; };
-		54D90ECE257AA6C200ED2B2C /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		564FD05CAF647DF68652420CD404680E /* Pods-ImageContentView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ImageContentView_Example.modulemap"; sourceTree = "<group>"; };
 		594E0A6478AB40B36124F580595AF3F3 /* ImageContentView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ImageContentView-prefix.pch"; sourceTree = "<group>"; };
 		6A72952B8CFDB7631BD2DF78CA29189D /* Pods-ImageContentView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ImageContentView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -119,7 +109,6 @@
 		0D01FB5B36E61744CCF00448504EF783 /* ImageContentView */ = {
 			isa = PBXGroup;
 			children = (
-				54D90EC7257AA6C200ED2B2C /* ImageContentView */,
 				1985A1E32159E1AD754DEE7C7DD5BB66 /* Pod */,
 				A2E2172418561762B92406B9949A725F /* Support Files */,
 			);
@@ -161,26 +150,6 @@
 				A7BFDA0A14E9DD5AEB7D4AA635934893 /* Pods_ImageContentView_Tests.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		54D90EC7257AA6C200ED2B2C /* ImageContentView */ = {
-			isa = PBXGroup;
-			children = (
-				54D90EC8257AA6C200ED2B2C /* Classes */,
-			);
-			path = ImageContentView;
-			sourceTree = "<group>";
-		};
-		54D90EC8257AA6C200ED2B2C /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				54D90EC9257AA6C200ED2B2C /* ContentAction.swift */,
-				54D90ECB257AA6C200ED2B2C /* DynamicImageView.swift */,
-				54D90ECC257AA6C200ED2B2C /* ImageContentView.swift */,
-				54D90ECD257AA6C200ED2B2C /* ImageActionButton.swift */,
-				54D90ECE257AA6C200ED2B2C /* UIButton.swift */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		9E050724BFD1D14774DDA1F322CC1272 /* Targets Support Files */ = {
@@ -412,11 +381,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				13FBBA9119C74F427D8C6147E91F122C /* ImageContentView-dummy.m in Sources */,
-				54D90ED4257AA6C200ED2B2C /* ImageContentView.swift in Sources */,
-				54D90ED3257AA6C200ED2B2C /* DynamicImageView.swift in Sources */,
-				54D90ED1257AA6C200ED2B2C /* ContentAction.swift in Sources */,
-				54D90ED6257AA6C200ED2B2C /* UIButton.swift in Sources */,
-				54D90ED5257AA6C200ED2B2C /* ImageActionButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
