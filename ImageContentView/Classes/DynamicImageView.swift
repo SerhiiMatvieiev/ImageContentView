@@ -8,7 +8,7 @@
 
 import UIKit
 
-final public class DynamicImageView: UIImageView {
+class DynamicImageView: UIImageView {
     
     public override func layoutSubviews() {
         super.layoutSubviews()

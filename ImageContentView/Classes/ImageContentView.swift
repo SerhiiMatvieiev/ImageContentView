@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ImageContentView: UIView {
+public class ImageContentView: UIView {
     
     // MARK: Dependencies
     private(set) var image: UIImage?
@@ -16,14 +16,14 @@ class ImageContentView: UIView {
     private var contentActions: [ContentAction] = []
 
     // MARK: Public
-    func configure(withImage image: UIImage?) {
+    public func configure(withImage image: UIImage?) {
         self.imageView.image = image
         self.imageEdgeInsets = { self.imageEdgeInsets }()
         self.contentInset = { self.contentInset }()
         addActionButtons()
     }
     
-    var imageEdgeInsets: UIEdgeInsets = .zero {
+    public var imageEdgeInsets: UIEdgeInsets = .zero {
         didSet {
             imageView.image = imageView.image?.withAlignmentRectInsets(imageEdgeInsets)
             setNeedsLayout()
@@ -31,23 +31,23 @@ class ImageContentView: UIView {
         }
     }
     
-    var contentInset: UIEdgeInsets = .zero {
+    public var contentInset: UIEdgeInsets = .zero {
         didSet {
             scrollView.contentInset = contentInset
         }
     }
 
-    func addActions(_ actions: [ContentAction]) {
+    public func addActions(_ actions: [ContentAction]) {
         actions.forEach { addAction($0) }
     }
     
-    func addAction(_ action: ContentAction) {
+    public func addAction(_ action: ContentAction) {
         guard action.frame != .zero else { return }
         contentActions.append(action)
     }
     
     // MARK: Subviews
-    var scrollView: UIScrollView = {
+    public var scrollView: UIScrollView = {
         let sv = UIScrollView()
         sv.showsHorizontalScrollIndicator = false
         sv.showsVerticalScrollIndicator = false
@@ -63,8 +63,9 @@ class ImageContentView: UIView {
         return iv
     }()
     
-    // MARK: Initialization
-    init(image: UIImage? = nil) {
+    // MARK: - Init
+    
+    public init(image: UIImage? = nil) {
         self.image = image
         super.init(frame: .zero)
         initialize()
@@ -83,7 +84,8 @@ class ImageContentView: UIView {
         addImageViewObserver()
     }
     
-    // MARK: Observers
+    // MARK: - Observers
+    
     private var imageViewObserver: NSKeyValueObservation?
 
     private func addImageViewObserver() {

@@ -8,17 +8,17 @@
 
 import UIKit
 
-struct ContentAction {
+public struct ContentAction {
     
     let frame: CGRect
     let name: String
     let touchAreaInset: CGFloat
     let controlEvent: UIControl.Event
 
-    typealias ContentActionHandler = () -> Void
-    let actionHandler: ContentActionHandler?
+    public typealias ContentActionHandler = () -> Void
+    public let actionHandler: ContentActionHandler?
     
-    init(
+    public init(
         frame: CGRect, name: String = "",
         for controlEvent: UIControl.Event = .touchUpInside,
         touchAreaInset: CGFloat = .zero,

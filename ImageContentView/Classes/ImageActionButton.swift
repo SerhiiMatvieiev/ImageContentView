@@ -8,11 +8,11 @@
 
 import UIKit
 
-class ImageActionButton: UIButton {
+public class ImageActionButton: UIButton {
     
-    var action: ContentAction?
+    public var action: ContentAction?
     
-    convenience init(action: ContentAction, frame: CGRect) {
+    public convenience init(action: ContentAction, frame: CGRect) {
         self.init(frame: frame)
         self.action = action
         self.touchAreaInset = action.touchAreaInset
@@ -21,14 +21,14 @@ class ImageActionButton: UIButton {
         #endif
     }
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         #if DEBUG
         addBorder()
         #endif
     }
     
-    required init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
