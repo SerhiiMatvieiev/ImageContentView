@@ -126,14 +126,14 @@ public class ImageContentView: UIView {
 
         scrollView.addSubview(contentView)
         contentView.translatesAutoresizingMaskIntoConstraints = false
-        let heightConstraint = scrollView.heightAnchor.constraint(equalTo: heightAnchor)
+        let heightConstraint = contentView.heightAnchor.constraint(equalTo: heightAnchor)
         heightConstraint.priority = UILayoutPriority(rawValue: 250)
         NSLayoutConstraint.activate([
             contentView.leftAnchor.constraint(equalTo: scrollView.leftAnchor),
             contentView.topAnchor.constraint(equalTo: scrollView.topAnchor),
             contentView.rightAnchor.constraint(equalTo: scrollView.rightAnchor),
             contentView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
-            scrollView.widthAnchor.constraint(equalTo: widthAnchor),
+            contentView.widthAnchor.constraint(equalTo: widthAnchor),
             heightConstraint
         ])
         
