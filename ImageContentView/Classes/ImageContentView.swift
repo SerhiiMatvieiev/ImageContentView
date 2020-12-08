@@ -125,6 +125,7 @@ public class ImageContentView: UIView {
         ])
 
         scrollView.addSubview(contentView)
+        contentView.translatesAutoresizingMaskIntoConstraints = false
         let heightConstraint = scrollView.heightAnchor.constraint(equalTo: heightAnchor)
         heightConstraint.priority = UILayoutPriority(rawValue: 250)
         NSLayoutConstraint.activate([
@@ -137,7 +138,7 @@ public class ImageContentView: UIView {
         ])
         
         contentView.addSubview(imageView)
-        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             imageView.leftAnchor.constraint(equalTo: contentView.leftAnchor),
             imageView.topAnchor.constraint(equalTo: contentView.topAnchor),
